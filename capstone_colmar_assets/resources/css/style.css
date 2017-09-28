@@ -1,0 +1,452 @@
+/* Universal */
+html {
+  font-size: 18px;
+  line-height: 1.1;
+  font-family: "Arial";
+}
+
+/* Logo & Navigation bar */
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+header img {
+  display: block;
+  max-width: none;
+  max-height: 32px;
+  padding-left: 24px;
+}
+header .logo-text {
+  display: inline-block;
+  font-size: 1.5rem;
+  flex-grow: 1;
+}
+header .menu-bar {
+  display: inline-block;
+  padding-right: 24px;
+}
+header .menu-bar a {
+  font-size: 1.1rem;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-decoration: none;
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 4px;
+  border-radius: 3px;
+  background-color: LightSlateGray;
+  transition: background-color 0.3s linear 0s;
+}
+header .menu-bar a:hover {
+  background-color: Tomato;
+  color: white;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  background-color: Gainsboro;
+}
+.banner img {
+  display: block;
+  width: 60%;
+  height: auto;
+  padding: 32px 24px;
+}
+.banner-text {
+  display: block;
+  text-align: left;
+  margin-right: 24px;
+}
+.banner-text h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: DarkSlateGray;
+}
+.banner-text span {
+  display: block;
+  font-size: 1.2rem;
+  font-family: "Calibri";
+}
+#start-btn {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: Tomato;
+  color: white;
+  margin-top: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+}
+#start-btn:hover {
+  background-color: Tomato;
+  color: white;
+  font-weight: bold;
+  box-shadow: inset 0 0 0 1px Tomato, 0px 2px 3px Tomato;
+}
+
+/* Main information */
+.container-1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding-left: 24px;
+}
+.information-main-container, .video-container {
+  max-width: 60%;
+  height: auto;
+  padding-top: 32px;
+}
+.information-main-container h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: DarkSlateGray;
+}
+.information-main-container p, .video-container p {
+  display: block;
+  font-family: "Calibri";
+}
+.information-main-container #name {
+  font-size: 16px;
+  font-family: "Calibri";
+  line-height: 0.5;
+  padding-bottom: 16px;
+}
+.aside-3-container, .aside-2-container {
+  width: 35%;
+  height: auto;
+  padding-left: 24px;
+  padding-top: 32px;
+}
+.information-main-container img, .video-container video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.aside-3-container img, .aside-2-container img {
+  display: block;
+}
+.section-1, .section-2, .section-3 {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid Gainsboro;
+  max-width: 100%;
+  max-height: auto;
+  transition: background-color 0.15s linear 0s;
+}
+.section-1:hover, .section-2:hover, .section-3:hover {
+  background-color: Gainsboro;
+}
+.photo-1, .photo-2, .photo-3 {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 42%;
+}
+.photo-1 img, .photo-2 img, .photo-3 img {
+  width: 92%;
+  height: auto;
+  display: block;
+  padding-left: 16px;
+}
+.text-1, .text-2, .text-3 {
+  display: block;
+  width: 58%;
+  height: auto;
+  padding-left: 24px;
+  line-height: 1.4;
+}
+.text-1 span, .text-2 span, .text-3 span, .video-container h3 {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: DarkSlateGray;
+  margin-top: 15%;
+}
+.text-1 p, .text-2 p, .text-3 p {
+  display: block;
+  font-family: "Calibri";
+  font-size: 0.9rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.text-1 #read-more, .text-2 #read-more, .text-3 #read-more {
+  display: block;
+  font-family: "Calibri";
+  font-size: 1rem;
+  color: RoyalBlue;
+  margin-top: 5%;
+}
+
+/*Courses block with photos*/
+.courses-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: Gainsboro;
+  padding-top: 0.1px;
+  padding-bottom: 32px;
+}
+.courses-headline h1 {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  color: DarkSlateGray;
+}
+.block-1, .block-2 {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  margin-left: 56px;
+  margin-right: 56px;
+}
+.block-1 {
+  margin-bottom: 32px;
+}
+.course {
+  display: block;
+  width: 33%;
+  margin-left: 16px;
+  margin-right: 16px;
+  background-color: white;
+  box-shadow: inset 0 0 0 1px Tomato, 0px 2px 3px Tomato;
+  transition: background-color 0.6s linear 0s;
+}
+.course img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.course h3 {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: DarkSlateGray;
+  padding-top: 16px;
+  padding-left: 16px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.course span {
+  display: block;
+  padding-left: 16px;
+  margin-top: 0;
+  font-family: "Calibri";
+  font-size: 0.9rem;
+  padding-bottom: 8px;
+}
+.course #text {
+  padding-top: 0px;
+  padding-bottom: 24px;
+}
+.course:hover {
+  background-color: Tomato;
+}
+.course span:hover {
+  color: white;
+}
+
+/* Video section */
+}
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+.video-headline h1 {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  color: DarkSlateGray;
+  width: 100%;
+}
+.video-section {
+  display: flex;
+  flex-direction: row;
+}
+#video-text {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+#video-text h3 {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#video-text p {
+  display: block;
+  padding-top: 8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 16px;
+}
+footer span {
+  display: inline-flex;
+  font-family: "Calibri";
+  font-size: 0.9rem;
+  flex-grow: 1;
+}
+footer nav a {
+  display: inline-flex;
+  padding-left: 8px;
+  text-decoration: none;
+  color: black;
+}
+@media only screen and (min-width: 1024px) {
+  .header-mobile {
+    display: none;
+  }
+  .aside-3-container-mobile, .courses {
+    display: none;
+  }
+  .video-section {
+    padding-left: 24px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header, #video-text, footer nav a, .aside-2-container {
+    display: none;
+  }
+  .header-mobile {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+  }
+  .header-mobile img {
+    display: inline-block;
+    height: 2.5rem;
+    width: 50%;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .banner img {
+    width: 100%;
+    height: 300px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .banner-text {
+   padding-bottom: 32px;
+   align-content: center;
+  }
+  .banner-text h1 {
+    padding-bottom: 32px;
+    padding-top: 32px;
+    padding-left: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 2.2rem;
+  }
+  .banner-text span {
+    padding-left: 16px;
+  }
+  #start-btn {
+    margin-left: 16px;
+  }
+  .information-main-container {
+    display: none;
+  }
+  .aside-3-container {
+    display: none;
+  }
+  .aside-3-container-mobile {
+    display: block;
+    width: 99.5%;
+    height: auto;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .section-1, .section-2, .section-3 {
+    width: 100%;
+    flex-direction: column;
+  }
+  .photo-1 img, .photo-2 img, .photo-3 img {
+    display: block;
+    width: 229.5%;
+    height: 220px;
+  }
+  .text-1, .text-2, .text-3 {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+  .text-1 span, .text-2 span, .text-3 span {
+    font-size: 1.8rem;
+    padding-left: 16px;
+    padding-top: 16px;
+    margin-top: 0px;
+  }
+  .text-1 p, .text-2 p, .text-3 p {
+    font-size: 1.2rem;
+    padding-left: 16px;
+  }
+  .text-1 #read-more, .text-2 #read-more, .text-3 #read-more {
+    font-size: 1.3rem;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .courses-container {
+    margin-top: 0px;
+    background-color: white;
+    padding-bottom: 0px;
+  }
+  .block-1, .block-2 {
+    display: none;
+  }
+  .courses h3 {
+    display: block;
+    background-color: Gainsboro;
+    font-size: 1.4rem;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: DarkSlateGray;
+    transition: box-shadow 0.25s linear 0s;
+  }
+  .courses h3:hover {
+    box-shadow: inset 0 0 0 1px Tomato, 0px 2px 3px Tomato;
+  }
+  .video-container {
+    max-width: 100%;
+    max-height: 242px;
+  }
+  .video-container video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  footer {
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+}
